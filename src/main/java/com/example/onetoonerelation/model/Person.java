@@ -10,7 +10,7 @@ public class Person {
 	
 	private String name;
 	
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "passport_id")
 	private Passport passport;
 	
